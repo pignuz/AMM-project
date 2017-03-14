@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nerdbook Profilo</title>
+        <meta charset="UTF-8"><!--codifica caratteri-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniele Serra"><!--autore-->
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                Nerdbook - Profilo
+            </div>
+        </header>
+        <div id="body">
+            <nav>
+                <ul>
+                    <li><a href="descrizione.html">Descrizione</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div id="profile">
+                <form action="profilo.php" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" />
+
+                    <label for="cognome">Cognome</label>
+                    <input type="text" name="cognome" id="cognome" />
+
+                    <label for="url_img_profile">Url immagine profilo</label>
+                    <input type="url" name="url_img_profile" id="url_img_profile" />
+
+                    <label for="presentation">Frase di presentazione</label>
+                    <textarea rows="5" cols="30" name="presentation" id="presentation" ></textarea>
+
+                    <label for="b_date">Data di nascita</label>
+                    <input type="date" name="b_date" id="b_date" min="1900-01-01"/>
+
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" />
+
+                    <label for="checkpass">Conferma Password</label>
+                    <input type="password" name="checkpass" id="checkpass" />
+
+                    <button type="submit">Procedi</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

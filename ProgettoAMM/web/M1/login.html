@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nerdbook Login</title>
+        <meta charset="UTF-8"><!--codifica caratteri-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniele Serra"><!--autore-->
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                Nerdbook - Login
+            </div>
+        </header>
+        
+        <div id="body">
+            <nav>
+                    <ul>
+                        <li><a href="descrizione.html"> Descrizione</a></li>
+                        <li><a href="profilo.html"> Profilo</a></li>
+                        <li><a href="bacheca.html"> Bacheca</a></li>
+                    </ul>
+            </nav>
+            <div id="autentication">
+                <form action="login.php" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" />
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" />
+                    <button type="submit">Accedi</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
