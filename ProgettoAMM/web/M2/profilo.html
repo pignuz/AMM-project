@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nerdbook Profilo</title>
+        <meta charset="UTF-8"><!--codifica caratteri-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniele Serra"><!--autore-->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <div id="title">
+                    Nerdbook
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="profilo.html">Profilo</a></li>
+                        <li><a href="bacheca.html">Bacheca</a></li>
+                        
+                        
+                    </ul>
+                </nav>
+            </header>
+            <!--Barra navigazione sito-->
+            
+            <!--Contenuto-->
+            <div id="side_bar">
+
+                <div id="friends">
+                    <ul>
+                        <li><h2>Persone</h2>
+                            <ul>
+                                <li>
+                                    <div class="user_container">
+                                    <img class="img_profle" alt="Foto profilo" src="../Img/profilo1.jpg">
+                                    <h3>Utente 1</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user_container">
+                                    <img class="img_profle" alt="Foto profilo" src="../Img/profilo2.jpg">
+                                    <h3>Utente 2</h3>
+                                    </div>
+                                </li>    
+                                <li>
+                                    <div class="user_container">
+                                    <img class="img_profle" alt="Foto profilo" src="../Img/profilo3.jpg">
+                                    <h3>Utente 3</h3>
+                                    </div>
+                                </li>    
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="groups">
+                    <div class="add_group_container">
+                        <a href="add_group.php" class="add_group"></a>
+                    </div>
+                        <ul>
+                            <li><h2>Gruppi</h2>
+                                <ul>
+                                    <li>
+                                        <div class="group_container">
+                                        <img class="img_profle" alt="Foto profilo" src="../Img/logo_mongolfiera.png">
+                                        <h3>Mongolfieristi</h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="group_container">
+                                        <img class="img_profle" alt="Foto profilo" src="../Img/logo_ritardatari.jpg">
+                                        <h3>Ritardatari</h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div id="page_content">
+                
+                <div id="profile">
+                    <form action="profilo.php" method="post">
+                        <div id="profile_pic">
+                            <img class="user_profile" alt="Foto profilo" src="../Img/user_profile.png">
+                        </div>
+                        
+                        <div class="profile_input">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" />
+                        </div>
+                        <div class="profile_input">
+                            <label for="cognome">Cognome</label>
+                            <input type="text" name="cognome" id="cognome" />
+                        </div>
+                        <div class="profile_input">
+                            <label for="url_img_profile">Url immagine profilo</label>
+                            <input type="url" name="url_img_profile" id="url_img_profile" />
+                        </div>
+                        
+                        <div id="b_date_div" class="profile_input">
+                            <label for="b_date">Data di nascita</label>
+                            <input type="date" name="b_date" id="b_date" min="1900-01-01"/>
+                        </div>
+                        <div class="profile_input">
+                            <label for="presentation">Frase di presentazione</label>
+                            <input type="text" name="presentation" id="presentation" />
+                        </div>
+                        <div class="profile_input">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" />
+                        </div>
+                        <div class="profile_input">
+                            <label for="checkpass">Conferma Password</label>
+                            <input type="password" name="checkpass" id="checkpass" />
+                        </div>
+                        <div class="profile_input">
+                            <button type="submit">Aggiorna</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="clear"></div>
+        </div>
+    </body>
+</html>

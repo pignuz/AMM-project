@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nerdbook Login</title>
+        <meta charset="UTF-8"><!--codifica caratteri-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniele Serra"><!--autore-->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <div id="page">
+            <header class="login_page">
+                <div id="logo_container">
+                    <img alt="Logo" src="../Img/logo.jpg">
+                </div>
+                <div id="title">
+                    Nerdbook
+                </div>
+            
+            </header>
+            <!--Barra navigazione sito-->
+            
+            <!--Contenuto-->
+            <div id="page_content_login" class="login_page"> 
+                
+                <div id="autentication">
+                    
+                    <form action="login.php" method="post">
+                        <div class="input_container">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" />
+                        </div>
+                        <div class="input_container">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" />
+                        </div>
+                        <div class="button">
+                            <button type="submit">Accedi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="clear"></div>
+        </div>
+    </body>
+</html>
